@@ -5,3 +5,4 @@ for char in range(32, 128):
     else:
         print(f'{char:5}: {chr(char)}', end=' ')
     i += 1
+

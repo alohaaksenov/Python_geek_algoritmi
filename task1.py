@@ -25,3 +25,4 @@ while True:
             print(f'{number1} {operation} {number2} = {number1 / number2}')
         except ZeroDivisionError:
             print('Ошибка. Деление на ноль')
+

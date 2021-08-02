@@ -8,3 +8,4 @@ for f in number:
     else:
         odd += 1
 print(f'У числа {number}: четных цифр - {even}, нечетных - {odd} ')
+
