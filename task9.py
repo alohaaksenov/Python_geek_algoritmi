@@ -1,4 +1,17 @@
-list_numbers = input('Введите 3 числа x,y,z: ').split(',')
-list_numbers = [int(x) for x in list_numbers]
-list_numbers.sort()
-print('Среднее число {}'.format(list_numbers[1]))
+def sum_numbers(number):
+    sum = 0
+    for f in number:
+        sum += int(f)
+    return sum
+
+
+list_number = [i for i in input('Введите числа и нажмите Enter: ').split()]
+
+max_number = 0
+max_sum = 0
+for i in list_number:
+    if sum_numbers(i) > max_sum:
+        max_number = i
+        max_sum = sum_numbers(i)
+
+print(f'У числа {max_number} была наибольшая сумма цифр - {max_sum}')

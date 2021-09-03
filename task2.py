@@ -1,4 +1,10 @@
-print('And = ' + str(5 & 6))
-print('Or = ' + str(5 | 6))
-print('Xor = ' + str(5 ^ 6))
-print('5 shift right = ' + str(5 >> 1) + '\n' + '5 shift left x2 = ' + str(5 << 2))
+number = input('Введите число: ')
+even = 0
+odd = 0
+for f in number:
+    i = int(f)
+    if i % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+print(f'У числа {number}: четных цифр - {even}, нечетных - {odd} ')
