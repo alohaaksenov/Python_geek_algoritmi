@@ -1,10 +1,3 @@
-print('Write x0 = ')
-x0 = int(input())
-print('Write y0 = ')
-y0 = int(input())
-print('Write x1 = ')
-x1 = int(input())
-print('Write y1 = ')
-y1 = int(input())
+number = input('Введите число: ')
 
-print('y = ' + str((y1-y0)/(x1-x0)) + '*x' + ' + ' + str(y0 + (-x0/(x1-x0)*(y1-y0))))
+print(f'Чило {number} в обратном порядке: {number[::-1]}')
